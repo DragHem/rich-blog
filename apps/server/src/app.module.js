@@ -8,18 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.AppModule = void 0;
 var common_1 = require("@nestjs/common");
-var app_controller_1 = require("./app.controller");
-var app_service_1 = require("./app.service");
-var prisma_module_1 = require("./prisma/prisma.module");
+var auth_module_1 = require("./auth/auth.module");
 var user_module_1 = require("./user/user.module");
+var post_module_1 = require("./post/post.module");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         (0, common_1.Module)({
-            imports: [prisma_module_1.PrismaModule, user_module_1.UserModule],
-            controllers: [app_controller_1.AppController],
-            providers: [app_service_1.AppService]
+            imports: [auth_module_1.AuthModule, user_module_1.UserModule, post_module_1.PostModule]
         })
     ], AppModule);
     return AppModule;

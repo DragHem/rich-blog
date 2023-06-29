@@ -59,7 +59,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 exports.__esModule = true;
 exports.PrismaService = void 0;
 var common_1 = require("@nestjs/common");
-var extension_1 = require("@prisma/client/extension");
+var client_1 = require("@prisma/client");
 var PrismaService = /** @class */ (function (_super) {
     __extends(PrismaService, _super);
     function PrismaService() {
@@ -99,5 +99,5 @@ var PrismaService = /** @class */ (function (_super) {
         (0, common_1.Injectable)()
     ], PrismaService);
     return PrismaService;
-}(extension_1.PrismaClient));
+}(client_1.PrismaClient));
 exports.PrismaService = PrismaService;
