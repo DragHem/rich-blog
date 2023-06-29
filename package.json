@@ -2,11 +2,11 @@
   "name": "nestjs-nextjs-trpc",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "pnpm run --parallel dev",
     "build:server": "pnpm run --filter=server build",
-    "build:web": "pnpm run --filter=web build"
+    "build:web": "pnpm run --filter=web build",
+    "start": "node apps/server/dist/main"
   },
   "keywords": [],
   "author": "",
